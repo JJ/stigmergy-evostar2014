@@ -1,38 +1,32 @@
  
 %Juan Luis: Incluyo algunos templates de diapositivas
 
-\section{Introduction}
+\section{Results at a glance}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Context}
+\begin{frame}{Gaps and clusters}
 
 \begin{columns}
+\column{.5\textwidth}
+  \includegraphics<1>[width=5cm]{images/jambywaldec.png} 
+  \includegraphics<2>[width=5cm]{images/spacediagram.png}
 
 \column{.5\textwidth}
- \begin{itemize}
-  \item \textcolor{red}{Algorithm} %(a finite list of well-defined instructions for calculating a function)
+  
   \begin{itemize}
-   \item Calculus
-   \item Data processing
-   \item $\dots$
+  \item DPTC dynamics resemblance traffic jams 
+  \item Gaps and clusters form spontaneously
+  \begin{itemize}
+  	\item<2> $\frac{n}{Y}$ (Density)
+  	\item<2> Movement criterion 
+    \begin{itemize}
+  		\item<2> Phenotype
+  		\item<2> Genotype 
+  		\item<2> Random 
+    \end{itemize}  	
+  	\item<2>  Cellular-Island Hybrid!? 
+  \end{itemize}  
   \end{itemize}
- \item \textcolor{red}{Computational Intelligence}% (algorithms to solve complex real-world problems)
- \begin{itemize}
-   \item Artificial neural-networks
-   \item Evolutionary computation
-   \item Swarm intelligence
-   \begin{itemize}
-     \item Particle swarm optimization
-     \item \textcolor{blue}{Ant colony optimization(ACO)}
-   \end{itemize}
-   \item $\dots$
-  \end{itemize}
- \end{itemize}
-\column{.5\textwidth}
-
-\begin{center} 
-  \includegraphics[width=5cm]{images/al-Khwarizmi.png} 
-\end{center} 
 
 \end{columns}
 
@@ -40,26 +34,104 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \note{Talk no more than 1 minute.}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Results using trap functions}
+
+
+\begin{columns}
+\column{.75\textwidth}
+\begin{scriptsize}
+\begin{block}{Settings}
+ \begin{itemize}
+ \item $n=400$
+ \item 2-trap $l=500$ 
+ \item 3-trap $l=375$ 
+ \item 4-trap $l=300$
+ \item Top. (torus) (ring) (DPCT)
+ \end{itemize}
+\end{block}
+\end{scriptsize}
+\column{.25\textwidth}
+\includegraphics[width=2cm]{images/ringteutoburg.png} 
+\end{columns}
+
+\centering
+\includegraphics[width=9cm]{images/results1.png} 
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\note{Talk no more than 1 minute.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Influence of density}
+\begin{columns}
+\column{.75\textwidth}
+\begin{scriptsize}
+\begin{block}{Settings}
+ \begin{itemize}
+ \item $n=400$
+ \item 4-trap $l=300$
+ \end{itemize}
+\end{block}
+\end{scriptsize}
+\column{.25\textwidth}
+\includegraphics[width=2cm]{images/crowd.png} 
+
+\end{columns}
+\centering
+\includegraphics[width=8cm]{images/results2.png} 
+
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\note{Talk no more than 1 minute.}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{A key concept: Emergence}
+\begin{frame}{What about optimal population sizes?}
 \begin{columns}
-\column{.6\textwidth}
+\column{.75\textwidth}
+\begin{scriptsize}
+\begin{block}{Settings}
  \begin{itemize}
-  \item Social animals like ants cooperate and describe emergent behaviors
-  \item<2-> But not only ants
+ \item \textst{n=400} $\rightarrow optimal$
+ \item 4-trap 
  \end{itemize}
-\column{.4\textwidth}
-\includegraphics<1>[width=4cm]{images/al-Khwarizmi.png}
-\includegraphics<2->[width=4cm]{images/al-Khwarizmi.png}
+\end{block}
+\end{scriptsize}
+\column{.25\textwidth}
+\includegraphics[width=2.5cm]{images/scale.png} 
+
 \end{columns}
-\only<3>{
-\begin{block}{Emergence [Wikipedia]}
-Emergence is the way complex systems and patterns arise out of a multiplicity of relatively simple interactions
+\centering
+\includegraphics[width=10cm]{images/results3.png} 
+
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\note{Talk no more than 1 minute.}
+
+
+
+\section{Conclusions}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Conclusions}
+
+\begin{itemize}
+\item Partially connected 1-dimensional cellular GA
+\item The resulting structure displays an island-model behaviour 
+\item Promotion of genetic diversity and reduction of the minimum population size
+\end{itemize}
+
+\only<2>{
+\begin{block}{Future works}
+ \begin{itemize}
+ \item Extension to 2-dimensional model
+ \item Modelling the DPCT in a probability-based model
+ \end{itemize}
 \end{block}
 }
-
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
